@@ -5,6 +5,13 @@ import Text from "./Text"
 import Columns from "./Columns"
 import Hero from "./Hero"
 
+import Card from "./Card"
+
+import Media from "./Media"
+
+import People from "./People"
+import Logos from "./Logos"
+
 storyblokInit({
   accessToken: process.env.GATSBY_PREVIEW_STORYBLOK,
   use: [apiPlugin],
@@ -12,6 +19,10 @@ storyblokInit({
     text: Text,
     columns: Columns,
     hero: Hero,
+    instance_card: Card,
+    media: Media,
+    people: People,
+    logos: Logos,
   },
 })
 
